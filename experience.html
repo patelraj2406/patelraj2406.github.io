@@ -3,17 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Experience — Raj Patel</title>
+  <meta
+    name="description"
+    content="Professional experience of Raj Patel, including department management and technical support roles."
+  >
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <div class="statusbar">
+  <header class="statusbar">
     <div class="statusbar-inner">
-      <a href="index.html" class="brand"><span class="dot pulse"></span> RAJ.PATEL</a>
-      <nav class="tabs" aria-label="Primary">
+      <a href="index.html" class="brand" aria-label="Raj Patel home page">
+        <span class="dot pulse" aria-hidden="true"></span>
+        RAJ.PATEL
+      </a>
+
+      <nav class="tabs" aria-label="Primary navigation">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="education.html">Education</a>
@@ -23,306 +40,261 @@
         <a href="contact.html">Contact</a>
       </nav>
     </div>
-  </div>
+  </header>
 
   <main class="wrap">
 
-    <section class="page-head">
-      <div class="panel-hero compact">
+    <section class="page-head" aria-labelledby="page-title">
+      <div class="panel-hero">
 
-        <svg class="hero-bg-svg" viewBox="0 0 900 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          class="hero-bg-svg"
+          viewBox="0 0 900 300"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <defs>
+            <pattern
+              id="heroGrid"
+              width="24"
+              height="24"
+              patternUnits="userSpaceOnUse"
+            >
+              <circle cx="2" cy="2" r="1.3" fill="#35D6B4" opacity="0.22"/>
+            </pattern>
+          </defs>
 
-          <g stroke="#35D6B4" stroke-width="1" opacity="0.28">
-            <line x1="120" y1="60" x2="260" y2="100"/>
-            <line x1="260" y1="100" x2="400" y2="60"/>
-            <line x1="400" y1="60" x2="540" y2="110"/>
-            <line x1="540" y1="110" x2="680" y2="70"/>
-            <line x1="680" y1="70" x2="800" y2="120"/>
+          <rect width="900" height="300" fill="url(#heroGrid)"/>
+
+          <g
+            fill="none"
+            stroke="#35D6B4"
+            stroke-width="1.5"
+            opacity="0.42"
+          >
+            <polyline points="80,88 230,145 380,92 510,156 650,98 820,180"/>
           </g>
 
           <g>
-            <circle cx="120" cy="60" r="4" fill="#35D6B4"/>
-            <circle cx="260" cy="100" r="4" fill="#F0A857"/>
-            <circle cx="400" cy="60" r="5" fill="#35D6B4"/>
-            <circle cx="540" cy="110" r="4" fill="#F0A857"/>
-            <circle cx="680" cy="70" r="5" fill="#35D6B4"/>
-            <circle cx="800" cy="120" r="4" fill="#35D6B4"/>
+            <circle cx="80" cy="88" r="4" fill="#35D6B4"/>
+            <circle cx="230" cy="145" r="4" fill="#F0A857"/>
+            <circle cx="380" cy="92" r="5" fill="#35D6B4"/>
+            <circle cx="510" cy="156" r="4" fill="#F0A857"/>
+            <circle cx="650" cy="98" r="5" fill="#35D6B4"/>
+            <circle cx="820" cy="180" r="4" fill="#35D6B4"/>
           </g>
 
+          <g opacity="0.16" fill="none" stroke="#F0A857">
+            <circle cx="750" cy="75" r="36"/>
+            <circle cx="750" cy="75" r="58"/>
+            <circle cx="750" cy="75" r="80"/>
+          </g>
         </svg>
 
-        <div class="eyebrow">
-          <span class="dot"></span> Experience
+        <div class="hero-content">
+          <div class="eyebrow">
+            <span class="dot" aria-hidden="true"></span>
+            EXPERIENCE
+          </div>
+
+          <h1 id="page-title">Work log</h1>
+
+          <p class="lede">
+            Five roles, reverse-chronological — from department management
+            and technical support to cloud infrastructure.
+          </p>
         </div>
-
-        <h1>Work log</h1>
-
-        <p class="lede">
-          Five roles, reverse-chronological — from department management
-          and technical support to cloud infrastructure.
-        </p>
 
       </div>
     </section>
 
+    <section class="experience-section" aria-labelledby="experience-title">
+      <h2 id="experience-title" class="sr-only">Professional experience</h2>
 
-    <section class="section">
+      <div class="timeline">
 
-      <div class="log">
+        <!-- Current position -->
+        <article class="experience-item current-experience">
 
-
-        <!-- WALMART -->
-
-        <div class="log-entry">
-
-          <div class="log-time">
-            MAY 16 2026 — AUG 21 2026
+          <div class="timeline-marker" aria-hidden="true">
+            <span class="timeline-dot"></span>
           </div>
 
-          <h3>
-            Department Manager — Dairy/Frozen
-          </h3>
+          <div class="experience-card current-card">
 
-          <div class="org">
-            Walmart · Ontario, Canada
+            <div class="current-badge">
+              <span class="dot pulse" aria-hidden="true"></span>
+              CURRENT ROLE
+            </div>
+
+            <div class="experience-meta">
+              <span class="date current-date">
+                AUG 22, 2026 — PRESENT
+              </span>
+            </div>
+
+            <h3>Produce Department Manager</h3>
+
+            <p class="company">
+              Walmart · Ontario, Canada
+            </p>
+
+            <div class="role-status">
+              <span aria-hidden="true">↗</span>
+              Currently working in this role
+            </div>
+
+            <ul>
+              <li>
+                Manage daily operations of the produce department, including
+                product quality, displays, inventory, and availability.
+              </li>
+
+              <li>
+                Lead and support associates while maintaining strong customer
+                service and department standards.
+              </li>
+
+              <li>
+                Monitor product freshness, rotation, ordering, and
+                merchandising.
+              </li>
+
+              <li>
+                Ensure the department remains clean, organized, well-stocked,
+                and ready for customers.
+              </li>
+            </ul>
+
+            <div class="chips" aria-label="Produce department manager skills">
+              <span class="chip on">Team Leadership</span>
+              <span class="chip on">Inventory Management</span>
+              <span class="chip on">Customer Service</span>
+              <span class="chip on">Merchandising</span>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- Previous position -->
+        <article class="experience-item">
+
+          <div class="timeline-marker" aria-hidden="true">
+            <span class="timeline-dot"></span>
           </div>
 
-          <ul>
+          <div class="experience-card">
 
-            <li>
-              Promoted to Department Manager of the Dairy/Frozen department,
-              responsible for daily department operations, inventory,
-              merchandising, product availability, and customer service.
-            </li>
+            <div class="experience-meta">
+              <span class="date">
+                MAY 16, 2026 — AUG 21, 2026
+              </span>
+            </div>
 
-            <li>
-              Manage department standards and ensure products are properly
-              stocked, organized, presented, and available for customers.
-            </li>
+            <h3>Department Manager — Dairy/Frozen</h3>
 
-            <li>
-              Monitor inventory accuracy and replenishment while maintaining
-              operational efficiency across the Dairy/Frozen department.
-            </li>
+            <p class="company">
+              Walmart · Ontario, Canada
+            </p>
 
-            <li>
-              Coordinate daily priorities and work closely with associates
-              to ensure department tasks are completed efficiently and
-              according to store standards.
-            </li>
+            <ul>
+              <li>
+                Promoted to Department Manager of the Dairy/Frozen department,
+                responsible for daily department operations, inventory,
+                merchandising, product availability, and customer service.
+              </li>
 
-            <li>
-              Work closely with Assistant Managers and Store Management
-              to identify operational opportunities and support department
-              performance.
-            </li>
+              <li>
+                Managed department standards and ensured products were properly
+                stocked, organized, presented, and available for customers.
+              </li>
 
-            <li>
-              Provide leadership and guidance to associates while maintaining
-              a professional and customer-focused environment.
-            </li>
+              <li>
+                Supported associates and helped maintain a clean, safe, and
+                efficient department.
+              </li>
+            </ul>
 
-          </ul>
+            <div class="chips" aria-label="Dairy and frozen department skills">
+              <span class="chip">Department Management</span>
+              <span class="chip">Inventory</span>
+              <span class="chip">Merchandising</span>
+              <span class="chip">Customer Service</span>
+            </div>
 
-        </div>
+          </div>
+        </article>
 
+        <!-- Add or edit your remaining roles below -->
+        <article class="experience-item">
 
-        <!-- GATESTONE -->
-
-        <div class="log-entry">
-
-          <div class="log-time">JAN 2025 — JUL 2025</div>
-
-          <h3>
-            Technical Support Representative
-          </h3>
-
-          <div class="org">
-            Gatestone (Rogers together with Shaw) · Brantford, Ontario (remote)
+          <div class="timeline-marker" aria-hidden="true">
+            <span class="timeline-dot"></span>
           </div>
 
-          <ul>
+          <div class="experience-card">
 
-            <li>
-              Counselled clients on internet, TV, and cable connection issues,
-              and set up Shaw and Rogers IDs, resulting in 95% customer satisfaction.
-            </li>
+            <div class="experience-meta">
+              <span class="date">
+                ADD YOUR DATES
+              </span>
+            </div>
 
-            <li>
-              Integrated ticketing systems to manage client accounts,
-              passwords, and product support issues.
-            </li>
+            <h3>Add Previous Position</h3>
 
-            <li>
-              Handled inbound and outbound inquiries, synchronizing
-              documentation accurately across every interaction.
-            </li>
+            <p class="company">
+              Company Name · Ontario, Canada
+            </p>
 
-            <li>
-              Resolved escalated technical queries within tight time targets
-              while maintaining professional, trust-building communication.
-            </li>
+            <ul>
+              <li>
+                Add a short description of your responsibilities and
+                accomplishments here.
+              </li>
 
-          </ul>
+              <li>
+                Add another achievement or important responsibility here.
+              </li>
+            </ul>
 
-        </div>
+            <div class="chips">
+              <span class="chip">Skill</span>
+              <span class="chip">Skill</span>
+            </div>
 
-
-        <!-- APPLE -->
-
-        <div class="log-entry">
-
-          <div class="log-time">OCT 2022 — JUL 2024</div>
-
-          <h3>
-            Technical Support Representative
-          </h3>
-
-          <div class="org">
-            Apple Inc. · Waterloo, Ontario (remote)
           </div>
-
-          <ul>
-
-            <li>
-              Supported customers on iPhone, iPad, iPod, Mac, and Apple ID
-              issues using Apple's internal support tools, achieving 95%
-              customer satisfaction.
-            </li>
-
-            <li>
-              Integrated ticketing systems to manage client accounts,
-              passwords, and product support issues.
-            </li>
-
-            <li>
-              Troubleshot technical issues end-to-end, earning consistently
-              positive customer feedback.
-            </li>
-
-            <li>
-              Managed urgent ticket escalations through to on-time resolution.
-            </li>
-
-          </ul>
-
-        </div>
-
-
-        <!-- BHARTI AIRTEL -->
-
-        <div class="log-entry">
-
-          <div class="log-time">APR 2021 — JUN 2022</div>
-
-          <h3>
-            Technical Support
-          </h3>
-
-          <div class="org">
-            Bharti Airtel · New Delhi, India
-          </div>
-
-          <ul>
-
-            <li>
-              Shaped the customer experience by troubleshooting internet
-              connectivity and related technical issues.
-            </li>
-
-            <li>
-              Installed and configured telecommunications equipment,
-              including routers and set-top boxes.
-            </li>
-
-            <li>
-              Worked hands-on across more than three supported technologies.
-            </li>
-
-            <li>
-              Delivered practical, effective support that consistently earned
-              positive customer feedback.
-            </li>
-
-          </ul>
-
-        </div>
-
-
-        <!-- TATA CONSULTANCY SERVICES -->
-
-        <div class="log-entry">
-
-          <div class="log-time">JAN 2020 — MAR 2021</div>
-
-          <h3>
-            Cloud Support
-          </h3>
-
-          <div class="org">
-            Tata Consultancy Services · Hyderabad, India
-          </div>
-
-          <ul>
-
-            <li>
-              Maintained TCS infrastructure spanning networking, servers,
-              and storage.
-            </li>
-
-            <li>
-              Monitored cloud application performance and service health
-              on an ongoing basis.
-            </li>
-
-            <li>
-              Resolved user-reported technical problems and questions
-              about cloud services.
-            </li>
-
-            <li>
-              Kept cloud security current to protect user data, and supported
-              scalability planning.
-            </li>
-
-          </ul>
-
-        </div>
-
+        </article>
 
       </div>
-
     </section>
 
   </main>
 
-
   <footer>
-
     <div class="wrap footer-inner">
-
       <span>
         &copy; 2026 Raj Patel · Ontario, Canada
       </span>
 
       <div class="footer-links">
-
-        <a href="mailto:er.rajpatel@outlook.com">
-          Email
-        </a>
-
-        <a href="https://linkedin.com/in/rajpatel24/">
+        <a href="mailto:er.rajpatel@outlook.com">Email</a>
+        <a
+          href="https://linkedin.com/in/rajpatel24/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           LinkedIn
         </a>
 
-        <a href="https://github.com/patelraj2406">
+        <a
+          href="https://github.com/patelraj2406"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           GitHub
         </a>
-
       </div>
-
     </div>
-
   </footer>
 
 </body>
