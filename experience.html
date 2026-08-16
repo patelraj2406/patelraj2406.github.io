@@ -3,38 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects — Raj Patel</title>
+  <title>Experience — Raj Patel</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Scoped styling for the "current" experience card */
-    .project-card.current {
+    /* Scoped styling for the current role — highlighted so it reads as "current" at a glance */
+    .log-entry.current {
       position: relative;
-      border: 1px solid rgba(53, 214, 180, 0.5);
-      box-shadow: 0 0 0 1px rgba(53, 214, 180, 0.15), 0 0 30px rgba(53, 214, 180, 0.12);
-      background: linear-gradient(180deg, rgba(53, 214, 180, 0.06), rgba(15, 23, 42, 0) 60%);
-      overflow: hidden;
+      padding: 22px 22px 22px 26px;
+      margin-bottom: 8px;
+      border-radius: 10px;
+      border: 1px solid rgba(53, 214, 180, 0.45);
+      background: linear-gradient(180deg, rgba(53, 214, 180, 0.07), rgba(15, 23, 42, 0) 70%);
+      box-shadow: 0 0 0 1px rgba(53, 214, 180, 0.12), 0 0 28px rgba(53, 214, 180, 0.10);
     }
-    .project-card.current::before {
+    .log-entry.current::before {
       content: "";
       position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, #35D6B4, #F0A857, #35D6B4);
-      background-size: 200% 100%;
-      animation: currentSheen 3s linear infinite;
-    }
-    @keyframes currentSheen {
-      0% { background-position: 0% 0; }
-      100% { background-position: 200% 0; }
+      top: 10px;
+      bottom: 10px;
+      left: 0;
+      width: 3px;
+      border-radius: 3px;
+      background: linear-gradient(180deg, #35D6B4, #F0A857);
     }
     .current-badge {
       display: inline-flex;
       align-items: center;
       gap: 6px;
       font-family: "IBM Plex Mono", monospace;
-      font-size: 0.7rem;
+      font-size: 0.68rem;
       font-weight: 600;
       letter-spacing: 0.08em;
       color: #35D6B4;
@@ -43,20 +42,23 @@
       border-radius: 999px;
       padding: 3px 10px;
       text-transform: uppercase;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
     }
     .current-badge .dot.pulse {
       width: 6px;
       height: 6px;
       border-radius: 50%;
       background: #35D6B4;
-      box-shadow: 0 0 0 rgba(53, 214, 180, 0.6);
       animation: pulseGlow 1.6s ease-out infinite;
     }
     @keyframes pulseGlow {
       0%   { box-shadow: 0 0 0 0 rgba(53, 214, 180, 0.6); }
       70%  { box-shadow: 0 0 0 8px rgba(53, 214, 180, 0); }
       100% { box-shadow: 0 0 0 0 rgba(53, 214, 180, 0); }
+    }
+    .log-entry.current .log-time {
+      color: #35D6B4;
+      font-weight: 600;
     }
   </style>
 </head>
@@ -69,8 +71,8 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="education.html">Education</a>
-        <a href="experience.html">Experience</a>
-        <a href="projects.html" aria-current="page">Projects</a>
+        <a href="experience.html" aria-current="page">Experience</a>
+        <a href="projects.html">Projects</a>
         <a href="certifications.html">Certifications</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -82,87 +84,93 @@
     <section class="page-head">
       <div class="panel-hero compact">
         <svg class="hero-bg-svg" viewBox="0 0 900 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <g opacity="0.15" fill="none" stroke="#35D6B4" stroke-width="2">
-            <ellipse cx="770" cy="60" rx="44" ry="25"/>
-            <ellipse cx="810" cy="46" rx="30" ry="18"/>
-            <ellipse cx="732" cy="46" rx="26" ry="16"/>
-          </g>
-          <g stroke="#F0A857" stroke-width="1" opacity="0.3">
-            <line x1="60" y1="210" x2="180" y2="170"/>
-            <line x1="180" y1="170" x2="300" y2="220"/>
+          <g stroke="#35D6B4" stroke-width="1" opacity="0.28">
+            <line x1="120" y1="60" x2="260" y2="100"/>
+            <line x1="260" y1="100" x2="400" y2="60"/>
+            <line x1="400" y1="60" x2="540" y2="110"/>
+            <line x1="540" y1="110" x2="680" y2="70"/>
+            <line x1="680" y1="70" x2="800" y2="120"/>
           </g>
           <g>
-            <circle cx="60" cy="210" r="4" fill="#F0A857"/>
-            <circle cx="180" cy="170" r="5" fill="#35D6B4"/>
-            <circle cx="300" cy="220" r="4" fill="#F0A857"/>
+            <circle cx="120" cy="60" r="4" fill="#35D6B4"/>
+            <circle cx="260" cy="100" r="4" fill="#F0A857"/>
+            <circle cx="400" cy="60" r="5" fill="#35D6B4"/>
+            <circle cx="540" cy="110" r="4" fill="#F0A857"/>
+            <circle cx="680" cy="70" r="5" fill="#35D6B4"/>
+            <circle cx="800" cy="120" r="4" fill="#35D6B4"/>
           </g>
         </svg>
-        <div class="eyebrow"><span class="dot"></span> Projects</div>
-        <h1>Deployed systems</h1>
-        <p class="lede">This is where new project write-ups will land as I build more. Here's the first one, live in the field.</p>
+        <div class="eyebrow"><span class="dot"></span> Experience</div>
+        <h1>Work log</h1>
+        <p class="lede">Five roles, reverse-chronological — from managing a produce department back to where I started, on the phones.</p>
       </div>
     </section>
 
     <section class="section">
+      <div class="log">
 
-      <!-- CURRENT: Produce Department Manager -->
-      <div class="project-card current">
-        <div class="current-badge"><span class="dot pulse"></span> Current</div>
-        <div class="project-head">
-          <div>
-            <h3>Produce Department Manager</h3>
-          </div>
-          <span class="date">STARTED AUG 2026</span>
+        <div class="log-entry current">
+          <div class="current-badge"><span class="dot pulse"></span> Current Position</div>
+          <div class="log-time">AUG 2026 — PRESENT</div>
+          <h3>Produce Department Manager</h3>
+          <div class="org">Walmart · Ontario, Canada</div>
+          <ul>
+            <li>Leading daily operations of the produce department, including ordering, inventory control, and stock rotation to maintain freshness standards.</li>
+            <li>Managing and scheduling a team, coordinating tasks to ensure consistent merchandising and customer service.</li>
+            <li>Overseeing vendor and delivery coordination to minimize waste and shrink while meeting quality benchmarks.</li>
+            <li>Applying data-driven inventory tracking to optimize stock levels and reduce loss.</li>
+          </ul>
         </div>
 
-        <ul>
-          <li>Overseeing daily produce department operations, including inventory management, ordering, and stock rotation.</li>
-          <li>Leading and scheduling a team to maintain freshness standards, merchandising, and customer service.</li>
-          <li>Managing vendor relationships and coordinating deliveries to minimize waste and shrink.</li>
-        </ul>
-
-        <div class="chips">
-          <span class="chip on">Team Leadership</span>
-          <span class="chip on">Inventory Management</span>
-          <span class="chip on">Operations</span>
+        <div class="log-entry">
+          <div class="log-time">JAN 2025 — JUL 2025</div>
+          <h3>Technical Support Representative</h3>
+          <div class="org">Gatestone (Rogers together with Shaw) · Brantford, Ontario (remote)</div>
+          <ul>
+            <li>Counselled clients on internet, TV, and cable connection issues, and set up Shaw and Rogers IDs, resulting in 95% customer satisfaction.</li>
+            <li>Integrated ticketing systems to manage client accounts, passwords, and product support issues.</li>
+            <li>Handled inbound and outbound inquiries, synchronizing documentation accurately across every interaction.</li>
+            <li>Resolved escalated technical queries within tight time targets while maintaining professional, trust-building communication.</li>
+          </ul>
         </div>
+
+        <div class="log-entry">
+          <div class="log-time">OCT 2022 — JUL 2024</div>
+          <h3>Technical Support Representative</h3>
+          <div class="org">Apple Inc. · Waterloo, Ontario (remote)</div>
+          <ul>
+            <li>Supported customers on iPhone, iPad, iPod, Mac, and Apple ID issues using Apple's internal support tools, achieving 95% customer satisfaction.</li>
+            <li>Integrated ticketing systems to manage client accounts, passwords, and product support issues.</li>
+            <li>Troubleshot technical issues end-to-end, earning consistently positive customer feedback.</li>
+            <li>Managed urgent ticket escalations through to on-time resolution.</li>
+          </ul>
+        </div>
+
+        <div class="log-entry">
+          <div class="log-time">APR 2021 — JUN 2022</div>
+          <h3>Technical Support</h3>
+          <div class="org">Bharti Airtel · New Delhi, India</div>
+          <ul>
+            <li>Shaped the customer experience by troubleshooting internet connectivity and related technical issues.</li>
+            <li>Installed and configured telecommunications equipment, including routers and set-top boxes.</li>
+            <li>Worked hands-on across more than three supported technologies.</li>
+            <li>Delivered practical, effective support that consistently earned positive customer feedback.</li>
+          </ul>
+        </div>
+
+        <div class="log-entry">
+          <div class="log-time">JAN 2020 — MAR 2021</div>
+          <h3>Cloud Support</h3>
+          <div class="org">Tata Consultancy Services · Hyderabad, India</div>
+          <ul>
+            <li>Maintained TCS infrastructure spanning networking, servers, and storage.</li>
+            <li>Monitored cloud application performance and service health on an ongoing basis.</li>
+            <li>Resolved user-reported technical problems and questions about cloud services.</li>
+            <li>Kept cloud security current to protect user data, and supported scalability planning.</li>
+          </ul>
+        </div>
+
       </div>
-
-      <div class="project-card">
-        <div class="project-head">
-          <div>
-            <h3>Watering Plants through the Internet of Things (IoT)</h3>
-          </div>
-          <span class="date">JAN 2017</span>
-        </div>
-
-        <div class="diagram">
-          <div class="diagram-flow">
-            <span class="diagram-node active">Soil sensor</span>
-            <span class="diagram-arrow">→</span>
-            <span class="diagram-node">Water level check</span>
-            <span class="diagram-arrow">→</span>
-            <span class="diagram-node">App notification</span>
-            <span class="diagram-arrow">→</span>
-            <span class="diagram-node active">Sprinkler auto-start</span>
-          </div>
-        </div>
-
-        <ul>
-          <li>Built an automated IoT watering system for farmers who struggle to water their crops daily.</li>
-          <li>Built a companion application that notifies the user when it's time to turn on the sprinklers.</li>
-          <li>Soil sensors continuously detect moisture level; if it drops below a set threshold, sprinklers start automatically without manual input.</li>
-          <li>Designed to help thousands of farmers and anyone with limited time or living far from their fields.</li>
-        </ul>
-
-        <div class="chips">
-          <span class="chip on">Android Studio</span>
-          <span class="chip on">Cloud</span>
-          <span class="chip on">Machine Learning</span>
-          <span class="chip on">IoT</span>
-        </div>
-      </div>
-
     </section>
 
   </main>
