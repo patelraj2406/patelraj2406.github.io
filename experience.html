@@ -5,10 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Experience — Raj Patel</title>
-  <meta
-    name="description"
-    content="Professional experience of Raj Patel, including department management and technical support roles."
-  >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,14 +19,15 @@
 
 <body>
 
-  <header class="statusbar">
+  <div class="statusbar">
     <div class="statusbar-inner">
+
       <a href="index.html" class="brand" aria-label="Raj Patel home page">
         <span class="dot pulse" aria-hidden="true"></span>
         RAJ.PATEL
       </a>
 
-      <nav class="tabs" aria-label="Primary navigation">
+      <nav class="tabs" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="education.html">Education</a>
@@ -39,23 +36,26 @@
         <a href="certifications.html">Certifications</a>
         <a href="contact.html">Contact</a>
       </nav>
+
     </div>
-  </header>
+  </div>
 
   <main class="wrap">
 
-    <section class="page-head" aria-labelledby="page-title">
+    <section class="page-head" aria-labelledby="experience-title">
+
       <div class="panel-hero">
 
         <svg
           class="hero-bg-svg"
           viewBox="0 0 900 300"
           preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
         >
           <defs>
             <pattern
-              id="heroGrid"
+              id="hero-grid"
               width="24"
               height="24"
               patternUnits="userSpaceOnUse"
@@ -64,7 +64,7 @@
             </pattern>
           </defs>
 
-          <rect width="900" height="300" fill="url(#heroGrid)"/>
+          <rect width="900" height="300" fill="url(#hero-grid)"/>
 
           <g
             fill="none"
@@ -84,7 +84,11 @@
             <circle cx="820" cy="180" r="4" fill="#35D6B4"/>
           </g>
 
-          <g opacity="0.16" fill="none" stroke="#F0A857">
+          <g
+            opacity="0.16"
+            fill="none"
+            stroke="#F0A857"
+          >
             <circle cx="750" cy="75" r="36"/>
             <circle cx="750" cy="75" r="58"/>
             <circle cx="750" cy="75" r="80"/>
@@ -97,23 +101,23 @@
             EXPERIENCE
           </div>
 
-          <h1 id="page-title">Work log</h1>
+          <h1 id="experience-title">Work log</h1>
 
           <p class="lede">
-            Five roles, reverse-chronological — from department management
-            and technical support to cloud infrastructure.
+            Professional experience in department management, customer service,
+            technical support, and cloud infrastructure.
           </p>
         </div>
 
       </div>
+
     </section>
 
-    <section class="experience-section" aria-labelledby="experience-title">
-      <h2 id="experience-title" class="sr-only">Professional experience</h2>
+    <section class="experience-section" aria-label="Professional experience">
 
-      <div class="timeline">
+      <div class="experience-timeline">
 
-        <!-- Current position -->
+        <!-- Current Walmart position -->
         <article class="experience-item current-experience">
 
           <div class="timeline-marker" aria-hidden="true">
@@ -128,12 +132,12 @@
             </div>
 
             <div class="experience-meta">
-              <span class="date current-date">
+              <time datetime="2026-08-22" class="date current-date">
                 AUG 22, 2026 — PRESENT
-              </span>
+              </time>
             </div>
 
-            <h3>Produce Department Manager</h3>
+            <h2>Produce Department Manager</h2>
 
             <p class="company">
               Walmart · Ontario, Canada
@@ -147,16 +151,16 @@
             <ul>
               <li>
                 Manage daily operations of the produce department, including
-                product quality, displays, inventory, and availability.
+                product quality, displays, inventory, and product availability.
               </li>
 
               <li>
-                Lead and support associates while maintaining strong customer
-                service and department standards.
+                Lead and support associates while maintaining high standards
+                for customer service and department performance.
               </li>
 
               <li>
-                Monitor product freshness, rotation, ordering, and
+                Monitor product freshness, product rotation, ordering, and
                 merchandising.
               </li>
 
@@ -174,9 +178,10 @@
             </div>
 
           </div>
+
         </article>
 
-        <!-- Previous position -->
+        <!-- Existing Dairy/Frozen position -->
         <article class="experience-item">
 
           <div class="timeline-marker" aria-hidden="true">
@@ -186,12 +191,12 @@
           <div class="experience-card">
 
             <div class="experience-meta">
-              <span class="date">
+              <time datetime="2026-05-16" class="date">
                 MAY 16, 2026 — AUG 21, 2026
-              </span>
+              </time>
             </div>
 
-            <h3>Department Manager — Dairy/Frozen</h3>
+            <h2>Department Manager — Dairy/Frozen</h2>
 
             <p class="company">
               Walmart · Ontario, Canada
@@ -215,7 +220,7 @@
               </li>
             </ul>
 
-            <div class="chips" aria-label="Dairy and frozen department skills">
+            <div class="chips">
               <span class="chip">Department Management</span>
               <span class="chip">Inventory</span>
               <span class="chip">Merchandising</span>
@@ -223,9 +228,10 @@
             </div>
 
           </div>
+
         </article>
 
-        <!-- Add or edit your remaining roles below -->
+        <!-- Keep your other existing experience entries below this point -->
         <article class="experience-item">
 
           <div class="timeline-marker" aria-hidden="true">
@@ -236,11 +242,11 @@
 
             <div class="experience-meta">
               <span class="date">
-                ADD YOUR DATES
+                ADD YOUR EXISTING DATES
               </span>
             </div>
 
-            <h3>Add Previous Position</h3>
+            <h2>Your Existing Position</h2>
 
             <p class="company">
               Company Name · Ontario, Canada
@@ -248,12 +254,11 @@
 
             <ul>
               <li>
-                Add a short description of your responsibilities and
-                accomplishments here.
+                Replace this text with your existing experience description.
               </li>
 
               <li>
-                Add another achievement or important responsibility here.
+                Replace this text with another responsibility or achievement.
               </li>
             </ul>
 
@@ -263,21 +268,25 @@
             </div>
 
           </div>
+
         </article>
 
       </div>
+
     </section>
 
   </main>
 
   <footer>
     <div class="wrap footer-inner">
+
       <span>
         &copy; 2026 Raj Patel · Ontario, Canada
       </span>
 
       <div class="footer-links">
         <a href="mailto:er.rajpatel@outlook.com">Email</a>
+
         <a
           href="https://linkedin.com/in/rajpatel24/"
           target="_blank"
@@ -294,6 +303,7 @@
           GitHub
         </a>
       </div>
+
     </div>
   </footer>
 
