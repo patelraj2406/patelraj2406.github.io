@@ -8,57 +8,78 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Scoped styling for the current role — highlighted so it reads as "current" at a glance */
+    /* Premium highlight treatment for the current role */
     .log-entry.current {
       position: relative;
-      padding: 22px 22px 22px 26px;
-      margin-bottom: 8px;
-      border-radius: 10px;
-      border: 1px solid rgba(53, 214, 180, 0.45);
-      background: linear-gradient(180deg, rgba(53, 214, 180, 0.07), rgba(15, 23, 42, 0) 70%);
-      box-shadow: 0 0 0 1px rgba(53, 214, 180, 0.12), 0 0 28px rgba(53, 214, 180, 0.10);
+      padding: 24px 26px;
+      margin-bottom: 10px;
+      border-radius: 12px;
+      background:
+        linear-gradient(180deg, rgba(53, 214, 180, 0.06), rgba(15, 23, 42, 0) 65%);
+      border: 1px solid transparent;
+      background-clip: padding-box;
+      box-shadow:
+        0 0 0 1px rgba(53, 214, 180, 0.28),
+        0 8px 24px rgba(0, 0, 0, 0.25),
+        0 0 32px rgba(53, 214, 180, 0.08);
     }
     .log-entry.current::before {
       content: "";
       position: absolute;
-      top: 10px;
-      bottom: 10px;
-      left: 0;
-      width: 3px;
-      border-radius: 3px;
-      background: linear-gradient(180deg, #35D6B4, #F0A857);
+      inset: 0;
+      border-radius: 12px;
+      padding: 1px;
+      background: linear-gradient(135deg, #35D6B4, rgba(240, 168, 87, 0.7) 50%, #35D6B4);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
+    }
+    .log-entry.current::after {
+      content: "";
+      position: absolute;
+      top: -1px;
+      right: 18px;
+      width: 60px;
+      height: 3px;
+      border-radius: 0 0 3px 3px;
+      background: linear-gradient(90deg, #35D6B4, #F0A857);
     }
     .current-badge {
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 7px;
       font-family: "IBM Plex Mono", monospace;
       font-size: 0.68rem;
       font-weight: 600;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
       color: #35D6B4;
-      background: rgba(53, 214, 180, 0.12);
-      border: 1px solid rgba(53, 214, 180, 0.35);
+      background: rgba(53, 214, 180, 0.10);
+      border: 1px solid rgba(53, 214, 180, 0.4);
       border-radius: 999px;
-      padding: 3px 10px;
+      padding: 4px 12px;
       text-transform: uppercase;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
     .current-badge .dot.pulse {
       width: 6px;
       height: 6px;
       border-radius: 50%;
       background: #35D6B4;
-      animation: pulseGlow 1.6s ease-out infinite;
+      animation: pulseGlow 1.8s ease-out infinite;
     }
     @keyframes pulseGlow {
-      0%   { box-shadow: 0 0 0 0 rgba(53, 214, 180, 0.6); }
+      0%   { box-shadow: 0 0 0 0 rgba(53, 214, 180, 0.55); }
       70%  { box-shadow: 0 0 0 8px rgba(53, 214, 180, 0); }
       100% { box-shadow: 0 0 0 0 rgba(53, 214, 180, 0); }
     }
     .log-entry.current .log-time {
       color: #35D6B4;
       font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+    .log-entry.current h3 {
+      font-size: 1.15rem;
     }
   </style>
 </head>
@@ -102,7 +123,7 @@
         </svg>
         <div class="eyebrow"><span class="dot"></span> Experience</div>
         <h1>Work log</h1>
-        <p class="lede">Five roles, reverse-chronological — from managing a produce department back to where I started, on the phones.</p>
+        <p class="lede">Six roles, reverse-chronological — from managing a produce department back to where I started, on the phones.</p>
       </div>
     </section>
 
@@ -111,7 +132,7 @@
 
         <div class="log-entry current">
           <div class="current-badge"><span class="dot pulse"></span> Current Position</div>
-          <div class="log-time">AUG 2026 — PRESENT</div>
+          <div class="log-time">AUG 22, 2026 — PRESENT</div>
           <h3>Produce Department Manager</h3>
           <div class="org">Walmart · Ontario, Canada</div>
           <ul>
@@ -119,6 +140,18 @@
             <li>Managing and scheduling a team, coordinating tasks to ensure consistent merchandising and customer service.</li>
             <li>Overseeing vendor and delivery coordination to minimize waste and shrink while meeting quality benchmarks.</li>
             <li>Applying data-driven inventory tracking to optimize stock levels and reduce loss.</li>
+          </ul>
+        </div>
+
+        <div class="log-entry">
+          <div class="log-time">MAY 16, 2026 — AUG 21, 2026</div>
+          <h3>Dairy & Frozen Department Manager</h3>
+          <div class="org">Walmart · Ontario, Canada</div>
+          <ul>
+            <li>Managed daily operations of the dairy and frozen departments, including ordering, inventory control, and cold-chain compliance.</li>
+            <li>Supervised and scheduled department staff to maintain stocking standards and customer service levels.</li>
+            <li>Coordinated with vendors and distribution to minimize waste and out-of-stocks.</li>
+            <li>Monitored inventory accuracy and shrink to support department profitability targets.</li>
           </ul>
         </div>
 
