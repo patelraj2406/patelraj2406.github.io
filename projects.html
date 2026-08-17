@@ -47,11 +47,26 @@
         </svg>
         <div class="eyebrow"><span class="dot"></span> Projects</div>
         <h1>Deployed systems</h1>
-        <p class="lede">This is where new project write-ups will land as I build more. Here's the first one, live in the field.</p>
+        <p class="lede">Case studies from real engagements — cloud infrastructure, data migration, and the systems behind them.</p>
       </div>
     </section>
 
     <section class="section">
+
+      <a href="project-cloud-migration.html" class="feature-card reveal">
+        <div class="feature-eyebrow"><span class="dot"></span> Featured case study</div>
+        <h3>Modernizing cloud data management for a growing enterprise</h3>
+        <p class="desc">Led a 5-person team through a full Microsoft 365 migration — SharePoint Online, Teams, and Azure AD — replacing a fragmented legacy intranet with a governed, AODA-compliant environment.</p>
+        <div class="chips" style="margin-bottom:18px;">
+          <span class="chip on">Team Captain</span>
+          <span class="chip on">Microsoft 365</span>
+          <span class="chip on">SharePoint Online</span>
+          <span class="chip on">Azure AD / SSO</span>
+          <span class="chip on">Power BI</span>
+        </div>
+        <div class="feature-cta">View full case study &rarr;</div>
+      </a>
+
       <div class="project-card">
         <div class="project-head">
           <div>
@@ -100,6 +115,17 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('.reveal').forEach(function (el) { io.observe(el); });
+    } else {
+      document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+    }
+  </script>
 
 </body>
 </html>
